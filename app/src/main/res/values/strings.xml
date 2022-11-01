@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ParkingGo</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="txtUser">Email</string>
+    <string name="txtPassword">Password</string>
+    <string name="btnLogin">Ingresar</string>
+    <string name="btnRegister">Registrarme</string>
+    <string name="btnRegisterGoBack">Regresar</string>
+    <string name="txtValidatePassword">Validar contraseña</string>
+</resources>
