@@ -24,6 +24,15 @@
             android:src="@mipmap/ic_launcher"
             tools:ignore="ContentDescription" />
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="20dp"
+            android:text="INICIO DE SESIÓN"
+            android:textStyle="bold"/>
+
         <EditText
             android:id="@+id/inputUser"
             android:layout_width="match_parent"
@@ -38,6 +47,18 @@
             android:ems="10"
             android:inputType="textPassword"
             android:hint="Contraseña"/>
+
+        <TextView
+            android:id="@+id/btnGoRecovery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/olvide_contrasena"
+            android:gravity="center_horizontal"
+            android:padding="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="#57a0d4"
+            android:textStyle="bold"/>
 
         <Button
             android:id="@+id/btnLogin"
@@ -54,6 +75,8 @@
             android:text="@string/btnRegister"
             android:padding="10dp"
             android:layout_marginTop="10dp"/>
+
+
 
 
     </LinearLayout>

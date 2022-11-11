@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="@color/white"
-        android:gravity="center"
         android:orientation="vertical"
+        android:gravity="center"
         android:padding="@dimen/activity_horizontal_margin"
-        android:showDividers="middle">
+        android:showDividers="middle"
+        tools:ignore="MissingConstraints">
 
 
         <ImageView
@@ -30,55 +30,31 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:paddingBottom="20dp"
-            android:text="REGISTRO"
+            android:text="RECUPERAR DE CONTRASEÑA"
             android:textStyle="bold"/>
 
         <EditText
-            android:id="@+id/inputUser"
+            android:id="@+id/inputEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Email"/>
 
-        <EditText
-            android:id="@+id/inputPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:hint="Contraseña"/>
-
-        <EditText
-            android:id="@+id/inputValidatePassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:hint="Validar contraseña"/>
-
         <Button
-            android:id="@+id/btnRegisterAction"
+            android:id="@+id/btnRecovery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Registrarme"
+            android:text="@string/btnRecovery"
             android:padding="10dp"
             android:layout_marginTop="10dp"/>
 
-        <Button
-            android:id="@+id/btnRegisterGoBack"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/btnRegisterGoBack"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"/>
     </LinearLayout>
 
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_gravity="center"
+        android:layout_gravity="center|bottom"
         android:layout_marginBottom="20dp"
         android:visibility="gone" />
-
 </androidx.appcompat.widget.LinearLayoutCompat>

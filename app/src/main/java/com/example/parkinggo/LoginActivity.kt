@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ProgressBar
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.parkinggo.databinding.ActivityLoginBinding
@@ -23,6 +24,7 @@ class LoginActivity : AppCompatActivity() {
 
     private var btnLogin:Button? = null
     private var btnRegister:Button? = null
+    private var btnRecoveryPage:TextView? = null
 
     private var inputEmail: EditText? = null
     private var inputPassword: EditText? = null
@@ -44,11 +46,16 @@ class LoginActivity : AppCompatActivity() {
 
         btnRegister = findViewById<Button>(R.id.btnRegister)
         btnLogin = findViewById<Button>(R.id.btnLogin)
+        btnRecoveryPage = findViewById<TextView>(R.id.btnGoRecovery)
         progressBar = findViewById<ProgressBar>(R.id.progressBar)
 
         btnRegister!!.setOnClickListener(View.OnClickListener {
             startActivity(Intent(this@LoginActivity,RegisterActivity::class.java))
         })
+
+        btnRecoveryPage!!.setOnClickListener {
+            startActivity(Intent(this@LoginActivity,RecoveryActivity::class.java))
+        }
 
         btnLogin!!.setOnClickListener(View.OnClickListener {
             val email = inputEmail!!.text.toString().trim()
